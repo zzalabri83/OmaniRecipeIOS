@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C2767FC2AA367DB21CC2D08E58ABE3DC"
-               BuildableName = "Pods_OmaniRecipeV1_1.framework"
-               BlueprintName = "Pods-OmaniRecipeV1.1"
+               BlueprintIdentifier = "779ED5E9DA825BBD07A40CF77D086915"
+               BuildableName = "leveldb.framework"
+               BlueprintName = "leveldb-library"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C2767FC2AA367DB21CC2D08E58ABE3DC"
-            BuildableName = "Pods_OmaniRecipeV1_1.framework"
-            BlueprintName = "Pods-OmaniRecipeV1.1"
+            BlueprintIdentifier = "779ED5E9DA825BBD07A40CF77D086915"
+            BuildableName = "leveldb.framework"
+            BlueprintName = "leveldb-library"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

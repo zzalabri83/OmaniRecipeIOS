@@ -6,4 +6,10 @@ target 'OmaniRecipeV1.1' do
   use_frameworks!
 
   # Pods for OmaniRecipeV1.1
+  pod 'Firebase/Core'
+pod 'Firebase/Auth'
+pod 'Firebase/Database'
+pod 'Firebase/Storage'
+#pod 'Kingfisher', '~> 4.0'
+
 end
