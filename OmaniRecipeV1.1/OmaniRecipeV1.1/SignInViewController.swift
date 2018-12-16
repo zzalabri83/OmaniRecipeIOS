@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class SignInViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var txtEmail: UITextField!
     

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		7C82B0A643572A36097542DD /* Pods_OmaniRecipeV1_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E40CDF356E79175B21F35B6 /* Pods_OmaniRecipeV1_1.framework */; };
 		9DEEF84A21C63E7200BDA720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEEF84921C63E7200BDA720 /* AppDelegate.swift */; };
-		9DEEF84C21C63E7200BDA720 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEEF84B21C63E7200BDA720 /* ViewController.swift */; };
+		9DEEF84C21C63E7200BDA720 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEEF84B21C63E7200BDA720 /* SignInViewController.swift */; };
 		9DEEF84F21C63E7200BDA720 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DEEF84D21C63E7200BDA720 /* Main.storyboard */; };
 		9DEEF85121C63E7600BDA720 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DEEF85021C63E7600BDA720 /* Assets.xcassets */; };
 		9DEEF85421C63E7600BDA720 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DEEF85221C63E7600BDA720 /* LaunchScreen.storyboard */; };
@@ -22,7 +22,7 @@
 		8E40CDF356E79175B21F35B6 /* Pods_OmaniRecipeV1_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OmaniRecipeV1_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DEEF84621C63E7200BDA720 /* OmaniRecipeV1.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OmaniRecipeV1.1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DEEF84921C63E7200BDA720 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9DEEF84B21C63E7200BDA720 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9DEEF84B21C63E7200BDA720 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		9DEEF84E21C63E7200BDA720 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DEEF85021C63E7600BDA720 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DEEF85321C63E7600BDA720 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 			children = (
 				9DEEF85B21C6571B00BDA720 /* UIDesignables */,
 				9DEEF84921C63E7200BDA720 /* AppDelegate.swift */,
-				9DEEF84B21C63E7200BDA720 /* ViewController.swift */,
+				9DEEF84B21C63E7200BDA720 /* SignInViewController.swift */,
 				9DEEF84D21C63E7200BDA720 /* Main.storyboard */,
 				9DEEF85021C63E7600BDA720 /* Assets.xcassets */,
 				9DEEF85221C63E7600BDA720 /* LaunchScreen.storyboard */,
@@ -195,7 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DEEF84C21C63E7200BDA720 /* ViewController.swift in Sources */,
+				9DEEF84C21C63E7200BDA720 /* SignInViewController.swift in Sources */,
 				9DEEF84A21C63E7200BDA720 /* AppDelegate.swift in Sources */,
 				9DEEF85D21C6571B00BDA720 /* DesignableTextField.swift in Sources */,
 				9DEEF85F21C667C500BDA720 /* DesignableButton.swift in Sources */,
