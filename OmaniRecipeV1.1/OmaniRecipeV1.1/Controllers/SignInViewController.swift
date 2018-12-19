@@ -31,7 +31,7 @@ class SignInViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         if Auth.auth().currentUser != nil {
-            //self.performSegue(withIdentifier: "SignInSucceeded", sender: nil)
+            self.performSegue(withIdentifier: "SignInSucceeded", sender: nil)
         }
     }
     override func viewDidLoad() {

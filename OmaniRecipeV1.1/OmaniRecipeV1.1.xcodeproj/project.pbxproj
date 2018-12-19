@@ -18,6 +18,9 @@
 		9DEEF87F21C679AE00BDA720 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEEF87E21C679AE00BDA720 /* SignUpViewController.swift */; };
 		9DEEF88321C67D7400BDA720 /* UserClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEEF88221C67D7400BDA720 /* UserClass.swift */; };
 		9DEEF88521C680AD00BDA720 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9DEEF88421C680AD00BDA720 /* GoogleService-Info.plist */; };
+		9DEEF88721C8D92B00BDA720 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEEF88621C8D92B00BDA720 /* HomePageViewController.swift */; };
+		9DEEF88921C8E02800BDA720 /* MenuBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEEF88821C8E02800BDA720 /* MenuBarViewController.swift */; };
+		9DEEF88B21C8E39C00BDA720 /* NextScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEEF88A21C8E39C00BDA720 /* NextScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		9DEEF87E21C679AE00BDA720 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9DEEF88221C67D7400BDA720 /* UserClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserClass.swift; sourceTree = "<group>"; };
 		9DEEF88421C680AD00BDA720 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9DEEF88621C8D92B00BDA720 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		9DEEF88821C8E02800BDA720 /* MenuBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarViewController.swift; sourceTree = "<group>"; };
+		9DEEF88A21C8E39C00BDA720 /* NextScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextScreenViewController.swift; sourceTree = "<group>"; };
 		C9336CEB83FAE0378CD0A569 /* Pods-OmaniRecipeV1.1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmaniRecipeV1.1.release.xcconfig"; path = "Pods/Target Support Files/Pods-OmaniRecipeV1.1/Pods-OmaniRecipeV1.1.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +73,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9DC686F721CA2768003434AC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9DEEF84B21C63E7200BDA720 /* SignInViewController.swift */,
+				9DEEF87E21C679AE00BDA720 /* SignUpViewController.swift */,
+				9DEEF88621C8D92B00BDA720 /* HomePageViewController.swift */,
+				9DEEF88821C8E02800BDA720 /* MenuBarViewController.swift */,
+				9DEEF88A21C8E39C00BDA720 /* NextScreenViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		9DEEF83D21C63E7200BDA720 = {
 			isa = PBXGroup;
 			children = (
@@ -88,10 +106,9 @@
 		9DEEF84821C63E7200BDA720 /* OmaniRecipeV1.1 */ = {
 			isa = PBXGroup;
 			children = (
+				9DC686F721CA2768003434AC /* Controllers */,
 				9DEEF85B21C6571B00BDA720 /* UIDesignables */,
 				9DEEF84921C63E7200BDA720 /* AppDelegate.swift */,
-				9DEEF84B21C63E7200BDA720 /* SignInViewController.swift */,
-				9DEEF87E21C679AE00BDA720 /* SignUpViewController.swift */,
 				9DEEF88221C67D7400BDA720 /* UserClass.swift */,
 				9DEEF84D21C63E7200BDA720 /* Main.storyboard */,
 				9DEEF85021C63E7600BDA720 /* Assets.xcassets */,
@@ -206,6 +223,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-OmaniRecipeV1.1/Pods-OmaniRecipeV1.1-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AKSideMenu/AKSideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -213,6 +231,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AKSideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -231,11 +250,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DEEF84C21C63E7200BDA720 /* SignInViewController.swift in Sources */,
+				9DEEF88721C8D92B00BDA720 /* HomePageViewController.swift in Sources */,
 				9DEEF84A21C63E7200BDA720 /* AppDelegate.swift in Sources */,
+				9DEEF88B21C8E39C00BDA720 /* NextScreenViewController.swift in Sources */,
 				9DEEF85D21C6571B00BDA720 /* DesignableTextField.swift in Sources */,
 				9DEEF85F21C667C500BDA720 /* DesignableButton.swift in Sources */,
 				9DEEF87F21C679AE00BDA720 /* SignUpViewController.swift in Sources */,
 				9DEEF88321C67D7400BDA720 /* UserClass.swift in Sources */,
+				9DEEF88921C8E02800BDA720 /* MenuBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
