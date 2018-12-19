@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7C82B0A643572A36097542DD /* Pods_OmaniRecipeV1_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E40CDF356E79175B21F35B6 /* Pods_OmaniRecipeV1_1.framework */; };
+		9DC686FD21CA2B1F003434AC /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC686F821CA2B1F003434AC /* RootViewController.swift */; };
+		9DC686FE21CA2B1F003434AC /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC686F921CA2B1F003434AC /* LeftMenuViewController.swift */; };
+		9DC6870021CA2B1F003434AC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC686FB21CA2B1F003434AC /* HomeViewController.swift */; };
+		9DC6870121CA2B1F003434AC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC686FC21CA2B1F003434AC /* SecondViewController.swift */; };
 		9DEEF84A21C63E7200BDA720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEEF84921C63E7200BDA720 /* AppDelegate.swift */; };
 		9DEEF84C21C63E7200BDA720 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEEF84B21C63E7200BDA720 /* SignInViewController.swift */; };
 		9DEEF84F21C63E7200BDA720 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DEEF84D21C63E7200BDA720 /* Main.storyboard */; };
@@ -18,14 +22,15 @@
 		9DEEF87F21C679AE00BDA720 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEEF87E21C679AE00BDA720 /* SignUpViewController.swift */; };
 		9DEEF88321C67D7400BDA720 /* UserClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEEF88221C67D7400BDA720 /* UserClass.swift */; };
 		9DEEF88521C680AD00BDA720 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9DEEF88421C680AD00BDA720 /* GoogleService-Info.plist */; };
-		9DEEF88721C8D92B00BDA720 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEEF88621C8D92B00BDA720 /* HomePageViewController.swift */; };
-		9DEEF88921C8E02800BDA720 /* MenuBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEEF88821C8E02800BDA720 /* MenuBarViewController.swift */; };
-		9DEEF88B21C8E39C00BDA720 /* NextScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEEF88A21C8E39C00BDA720 /* NextScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		612C264FAA73960A1CF6978F /* Pods-OmaniRecipeV1.1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmaniRecipeV1.1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OmaniRecipeV1.1/Pods-OmaniRecipeV1.1.debug.xcconfig"; sourceTree = "<group>"; };
 		8E40CDF356E79175B21F35B6 /* Pods_OmaniRecipeV1_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OmaniRecipeV1_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DC686F821CA2B1F003434AC /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		9DC686F921CA2B1F003434AC /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
+		9DC686FB21CA2B1F003434AC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9DC686FC21CA2B1F003434AC /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		9DEEF84621C63E7200BDA720 /* OmaniRecipeV1.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OmaniRecipeV1.1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DEEF84921C63E7200BDA720 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DEEF84B21C63E7200BDA720 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -38,9 +43,6 @@
 		9DEEF87E21C679AE00BDA720 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9DEEF88221C67D7400BDA720 /* UserClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserClass.swift; sourceTree = "<group>"; };
 		9DEEF88421C680AD00BDA720 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		9DEEF88621C8D92B00BDA720 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
-		9DEEF88821C8E02800BDA720 /* MenuBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarViewController.swift; sourceTree = "<group>"; };
-		9DEEF88A21C8E39C00BDA720 /* NextScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextScreenViewController.swift; sourceTree = "<group>"; };
 		C9336CEB83FAE0378CD0A569 /* Pods-OmaniRecipeV1.1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmaniRecipeV1.1.release.xcconfig"; path = "Pods/Target Support Files/Pods-OmaniRecipeV1.1/Pods-OmaniRecipeV1.1.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,9 +80,10 @@
 			children = (
 				9DEEF84B21C63E7200BDA720 /* SignInViewController.swift */,
 				9DEEF87E21C679AE00BDA720 /* SignUpViewController.swift */,
-				9DEEF88621C8D92B00BDA720 /* HomePageViewController.swift */,
-				9DEEF88821C8E02800BDA720 /* MenuBarViewController.swift */,
-				9DEEF88A21C8E39C00BDA720 /* NextScreenViewController.swift */,
+				9DC686FB21CA2B1F003434AC /* HomeViewController.swift */,
+				9DC686F921CA2B1F003434AC /* LeftMenuViewController.swift */,
+				9DC686F821CA2B1F003434AC /* RootViewController.swift */,
+				9DC686FC21CA2B1F003434AC /* SecondViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -249,15 +252,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DC6870121CA2B1F003434AC /* SecondViewController.swift in Sources */,
 				9DEEF84C21C63E7200BDA720 /* SignInViewController.swift in Sources */,
-				9DEEF88721C8D92B00BDA720 /* HomePageViewController.swift in Sources */,
 				9DEEF84A21C63E7200BDA720 /* AppDelegate.swift in Sources */,
-				9DEEF88B21C8E39C00BDA720 /* NextScreenViewController.swift in Sources */,
 				9DEEF85D21C6571B00BDA720 /* DesignableTextField.swift in Sources */,
+				9DC686FD21CA2B1F003434AC /* RootViewController.swift in Sources */,
+				9DC6870021CA2B1F003434AC /* HomeViewController.swift in Sources */,
 				9DEEF85F21C667C500BDA720 /* DesignableButton.swift in Sources */,
 				9DEEF87F21C679AE00BDA720 /* SignUpViewController.swift in Sources */,
+				9DC686FE21CA2B1F003434AC /* LeftMenuViewController.swift in Sources */,
 				9DEEF88321C67D7400BDA720 /* UserClass.swift in Sources */,
-				9DEEF88921C8E02800BDA720 /* MenuBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

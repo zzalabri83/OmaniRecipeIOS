@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EBm-VQ-ftd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hK3-Je-0G0">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -179,127 +180,11 @@
                     <connections>
                         <outlet property="txtEmail" destination="YzA-kH-XNg" id="8aN-KP-VNB"/>
                         <outlet property="txtPassword" destination="VJp-Fu-uU3" id="dW4-u6-I0Z"/>
-                        <segue destination="lrX-zJ-ias" kind="show" identifier="SignInSucceeded" id="Pls-8z-Pq7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1043.4782608695652" y="132.88043478260872"/>
-        </scene>
-        <!--Home-->
-        <scene sceneID="Jqk-w0-2Eh">
-            <objects>
-                <viewController id="xWX-3o-iKd" customClass="HomePageViewController" customModule="OmaniRecipeV1_1" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="24I-YY-Fml">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyZ-cE-KC1">
-                                <rect key="frame" x="125" y="353" width="177" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="btnGoDetails:" destination="xWX-3o-iKd" eventType="touchUpInside" id="DS0-zE-0bw"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="wb8-UN-EXO"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Home" id="0ej-BZ-Wxk">
-                        <barButtonItem key="rightBarButtonItem" systemItem="organize" id="oQ0-HQ-PtQ">
-                            <connections>
-                                <action selector="btngonemu:" destination="xWX-3o-iKd" id="WKp-j6-plS"/>
-                                <segue destination="i5T-cG-Uxf" kind="presentation" id="TOC-fj-Fze"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <segue destination="w6R-g7-Ch2" kind="show" identifier="godetails" id="3kz-yd-csb"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Zql-h3-wmC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2781.1594202898555" y="132.88043478260872"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="X4j-2g-Igo">
-            <objects>
-                <viewController id="w6R-g7-Ch2" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8TM-12-jhS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="UKU-e7-Fl5"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MiK-XK-TGI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2797" y="894"/>
-        </scene>
-        <!--Next-->
-        <scene sceneID="YIe-9H-3ya">
-            <objects>
-                <viewController title="Next" id="xbs-hd-AHm" customClass="NextScreenViewController" customModule="OmaniRecipeV1_1" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wxM-ts-j0A">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.95182386379999995" blue="0.85913943370000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="bbx-4y-vmy"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eQ2-K1-sBl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3558" y="895"/>
-        </scene>
-        <!--Menu Bar View Controller-->
-        <scene sceneID="AGf-OV-fKz">
-            <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="i5T-cG-Uxf" customClass="MenuBarViewController" customModule="OmaniRecipeV1_1" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="PAG-nM-Z3S">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zLe-oc-LZo">
-                                <rect key="frame" x="0.0" y="480" width="414" height="256"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Tf-9i-W1Q">
-                                        <rect key="frame" x="8" y="48" width="152" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="btnGoHome:" destination="i5T-cG-Uxf" eventType="touchUpInside" id="ash-lD-aOR"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udE-0n-eN7">
-                                        <rect key="frame" x="8" y="106" width="152" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="btnGoNextScreen:" destination="i5T-cG-Uxf" eventType="touchUpInside" id="KH3-7p-LCZ"/>
-                                            <segue destination="xbs-hd-AHm" kind="show" id="aFw-A9-EVp"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="256" id="vGn-GA-YmN"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" red="0.51427801724137934" green="0.51427801724137934" blue="0.51427801724137934" alpha="0.63010448619631898" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="zLe-oc-LZo" firstAttribute="trailing" secondItem="1g0-1R-PoR" secondAttribute="trailing" id="Obx-j4-8hH"/>
-                            <constraint firstItem="zLe-oc-LZo" firstAttribute="bottom" secondItem="1g0-1R-PoR" secondAttribute="bottom" id="dsQ-MU-W8G"/>
-                            <constraint firstItem="zLe-oc-LZo" firstAttribute="leading" secondItem="1g0-1R-PoR" secondAttribute="leading" id="gfa-4J-Zlf"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="1g0-1R-PoR"/>
-                    </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7p6-2f-O29" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3576.811594202899" y="134.5108695652174"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VRN-Uu-6SM">
@@ -501,33 +386,157 @@
                         <outlet property="txtConfirmPass" destination="x8R-rm-z4i" id="a6h-yF-dTc"/>
                         <outlet property="txtEmail" destination="TGb-EN-dyL" id="Zr8-GQ-pki"/>
                         <outlet property="txtPassword" destination="vzj-iJ-KST" id="dj8-aw-Hje"/>
-                        <segue destination="lrX-zJ-ias" kind="show" identifier="SignUpSucceeded" id="cBo-j6-sja"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hd0-Ym-3jw" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1043" y="847"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="cfU-XD-wjK">
+        <!--Root View Controller-->
+        <scene sceneID="6VP-mz-dsc">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lrX-zJ-ias" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="La3-BG-Y7N">
+                <viewController storyboardIdentifier="rootController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hK3-Je-0G0" customClass="RootViewController" customModule="OmaniRecipeV1_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="akZ-q9-w6G"/>
+                        <viewControllerLayoutGuide type="bottom" id="WxU-kZ-usy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LIt-ho-sJz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="5DT-r9-9pM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P6p-Gq-tsk" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2128" y="133"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aS1-hJ-KnY">
+            <objects>
+                <navigationController storyboardIdentifier="contentViewController" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8Gs-y2-kNm" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8UJ-WU-at5">
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <nil name="viewControllers"/>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Y5G-s3-avg">
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="1pB-8X-rbA">
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
-                        <segue destination="xWX-3o-iKd" kind="relationship" relationship="rootViewController" id="Lje-rL-5O8"/>
+                        <segue destination="hSz-Z5-9AU" kind="relationship" relationship="rootViewController" id="10h-7Y-VqX"/>
+                        <segue destination="wWj-71-pBA" kind="show" identifier="second" id="uUr-Ed-Ql3"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aeR-lk-5sv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LUF-9U-flF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1873.913043478261" y="132.88043478260872"/>
+            <point key="canvasLocation" x="2974" y="133"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="B70-95-Bno">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hSz-Z5-9AU" customClass="HomeViewController" customModule="OmaniRecipeV1_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gl8-TS-9LW"/>
+                        <viewControllerLayoutGuide type="bottom" id="0yO-Wr-8PG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Wd-fg-Wih">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background3" translatesAutoresizingMaskIntoConstraints="NO" id="iKB-fL-KaD">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ua8-No-Fjx">
+                                <rect key="frame" x="184" y="200" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnGoNext:" destination="hSz-Z5-9AU" eventType="touchUpInside" id="vnS-sf-qlf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="iKB-fL-KaD" secondAttribute="trailing" id="EGo-bh-DRs"/>
+                            <constraint firstItem="iKB-fL-KaD" firstAttribute="leading" secondItem="7Wd-fg-Wih" secondAttribute="leading" id="PJg-ml-aH0"/>
+                            <constraint firstAttribute="bottom" secondItem="iKB-fL-KaD" secondAttribute="bottom" id="V9p-RH-E1z"/>
+                            <constraint firstItem="iKB-fL-KaD" firstAttribute="top" secondItem="7Wd-fg-Wih" secondAttribute="topMargin" id="qtf-Mh-r8O"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DE7-g1-RgM"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="zPj-Iv-rfa">
+                        <barButtonItem key="leftBarButtonItem" systemItem="organize" id="tdx-DI-R2C">
+                            <connections>
+                                <action selector="presentLeftMenuViewController:" destination="hSz-Z5-9AU" id="3RF-L7-dBi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="0N2-zh-cr1" kind="show" identifier="segueRecipeDetails" id="P8A-mA-uTQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dYu-bm-JSI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3786" y="133"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="m7z-br-gbg">
+            <objects>
+                <viewController id="0N2-zh-cr1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hqo-kv-zJb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ooh-Hd-8qv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rkf-vF-Gsh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4641" y="133"/>
+        </scene>
+        <!--Left Menu View Controller-->
+        <scene sceneID="cv6-in-sQ9">
+            <objects>
+                <viewController restorationIdentifier="leftMenuViewController" storyboardIdentifier="leftMenuViewController" id="c7z-rr-Bo9" customClass="LeftMenuViewController" customModule="OmaniRecipeV1_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="34o-y0-3xd"/>
+                        <viewControllerLayoutGuide type="bottom" id="lwW-pa-4Ak"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZiE-BK-qfi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Ka-kz-cVr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hqN-gR-GYd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2974" y="857"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="qAz-uh-3il">
+            <objects>
+                <viewController restorationIdentifier="secondViewController" storyboardIdentifier="secondViewController" id="wWj-71-pBA" customClass="SecondViewController" customModule="AKSideMenuStoryboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IfQ-8h-qBq"/>
+                        <viewControllerLayoutGuide type="bottom" id="zBQ-au-yAB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XpP-SV-P0F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="1" green="0.79024568979999998" blue="0.39722655649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="TtA-hl-byt"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="pB6-fR-0eG">
+                        <barButtonItem key="leftBarButtonItem" systemItem="organize" id="3cm-1Q-U3R">
+                            <connections>
+                                <action selector="presentLeftMenuViewController:" destination="wWj-71-pBA" id="8Sb-ey-FiP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4yy-mT-3w2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3786" y="857"/>
         </scene>
     </scenes>
     <resources>
@@ -535,7 +544,4 @@
         <image name="icons8-contacts-512" width="512" height="512"/>
         <image name="icons8-lock-96" width="96" height="96"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Pls-8z-Pq7"/>
-    </inferredMetricsTieBreakers>
 </document>
