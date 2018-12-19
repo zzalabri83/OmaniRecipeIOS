@@ -16,9 +16,7 @@ class SignInViewController: UIViewController {
     @IBAction func btnSignIn(_ sender: Any) {
         Auth.auth().signIn(withEmail: txtEmail.text!, password: txtPassword.text!) { (user, error) in
             if error == nil{
-                //self.performSegue(withIdentifier: "SignInSucceeded", sender: self)
-                self.sideMenuViewController!.setContentViewController(UINavigationController(rootViewController: self.storyboard!.instantiateViewController(withIdentifier: "rootController")), animated: true)
-                self.sideMenuViewController!.hideMenuViewController()
+                self.performSegue(withIdentifier: "SignInSucceeded", sender: self)
             }
             else{
                 let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
@@ -33,29 +31,13 @@ class SignInViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         if Auth.auth().currentUser != nil {
-            //self.performSegue(withIdentifier: "SignInSucceeded", sender: nil)
-            //self.sideMenuViewController!.setContentViewController(UINavigationController(rootViewController: self.storyboard!.instantiateViewController(withIdentifier: "rootController")), animated: true)
-            //self.sideMenuViewController!.hideMenuViewController()
+            self.performSegue(withIdentifier: "SignInSucceeded", sender: self)
         }
     }
     override func viewDidLoad() {
         
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        let imageView = UIImageView(frame: CGRect(x: 5, y: 0, width: 30, height: 30))
-        let image = UIImage(named: "apple2")
-        imageView.alpha = 0.5
-        
-        imageView.image = image
-        txtEmail.leftViewMode = .always
-        txtEmail.leftView = imageView
-        //txtEmail.addSubview(imageView)
-        
-        //txtEmail.rightViewMode = .always
-        //txtEmail.rightView = imageView
-        
-        
     }
     
     override func didReceiveMemoryWarning() {

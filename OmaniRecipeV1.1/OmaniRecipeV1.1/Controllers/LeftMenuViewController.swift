@@ -10,8 +10,10 @@ import UIKit
 
 public class LeftMenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    var tableView: UITableView?
-
+    //var tableView: UITableView?
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var imgProfile: UIImageView!
+    
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -19,22 +21,24 @@ public class LeftMenuViewController: UIViewController, UITableViewDelegate, UITa
     override public func viewDidLoad() {
         super.viewDidLoad()
 
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        //let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
         let image = UIImage(named: "Balloon")
-        imageView.image = image
+        imgProfile.image = image
         //circular
-        imageView.layer.cornerRadius = imageView.frame.size.width / 2;
-        imageView.clipsToBounds = true;
+        imgProfile.layer.cornerRadius = imgProfile.frame.size.width / 2;
+        imgProfile.clipsToBounds = true;
         //brder
         let red = UIColor(red: 100.0/255.0, green: 130.0/255.0, blue: 230.0/255.0, alpha: 1.0)
-        imageView.layer.borderWidth = 3.0
-        imageView.layer.borderColor = red.cgColor
+        imgProfile.layer.borderWidth = 3.0
+        imgProfile.layer.borderColor = red.cgColor
         
-        self.view.addSubview(imageView)
+        //self.view.addSubview(imageView)
         
         
         
-        let tableView = UITableView(frame: CGRect(x: 0, y: (self.view.frame.size.height - 54 * 5) / 2.0, width: self.view.frame.size.width, height: 54 * 5), style: .plain)
+        //let tableView = UITableView(frame: CGRect(x: 0, y: (self.view.frame.size.height - 54 * 5) / 2.0, width: self.view.frame.size.width, height: 54 * 5), style: .plain)
+        
+        
         tableView.autoresizingMask = [.flexibleTopMargin, .flexibleBottomMargin, .flexibleWidth]
         tableView.delegate = self
         tableView.dataSource = self
@@ -44,8 +48,8 @@ public class LeftMenuViewController: UIViewController, UITableViewDelegate, UITa
         tableView.separatorStyle = .none
         tableView.bounces = false
 
-        self.tableView = tableView
-        self.view.addSubview(self.tableView!)
+        //self.tableView = tableView
+        //self.view.addSubview(self.tableView!)
         
     }
 

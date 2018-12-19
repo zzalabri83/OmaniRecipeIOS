@@ -109,8 +109,8 @@
 		9DEEF84821C63E7200BDA720 /* OmaniRecipeV1.1 */ = {
 			isa = PBXGroup;
 			children = (
-				9DC686F721CA2768003434AC /* Controllers */,
 				9DEEF85B21C6571B00BDA720 /* UIDesignables */,
+				9DC686F721CA2768003434AC /* Controllers */,
 				9DEEF84921C63E7200BDA720 /* AppDelegate.swift */,
 				9DEEF88221C67D7400BDA720 /* UserClass.swift */,
 				9DEEF84D21C63E7200BDA720 /* Main.storyboard */,
@@ -426,7 +426,10 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = OmaniRecipeV1.1/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.training.OmaniRecipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -444,7 +447,10 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = OmaniRecipeV1.1/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.training.OmaniRecipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
