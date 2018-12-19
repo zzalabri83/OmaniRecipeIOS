@@ -16,7 +16,9 @@ class SignInViewController: UIViewController {
     @IBAction func btnSignIn(_ sender: Any) {
         Auth.auth().signIn(withEmail: txtEmail.text!, password: txtPassword.text!) { (user, error) in
             if error == nil{
-                self.performSegue(withIdentifier: "SignInSucceeded", sender: self)
+                //self.performSegue(withIdentifier: "SignInSucceeded", sender: self)
+                self.sideMenuViewController!.setContentViewController(UINavigationController(rootViewController: self.storyboard!.instantiateViewController(withIdentifier: "rootController")), animated: true)
+                self.sideMenuViewController!.hideMenuViewController()
             }
             else{
                 let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
@@ -31,7 +33,9 @@ class SignInViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         if Auth.auth().currentUser != nil {
-            self.performSegue(withIdentifier: "SignInSucceeded", sender: nil)
+            //self.performSegue(withIdentifier: "SignInSucceeded", sender: nil)
+            //self.sideMenuViewController!.setContentViewController(UINavigationController(rootViewController: self.storyboard!.instantiateViewController(withIdentifier: "rootController")), animated: true)
+            //self.sideMenuViewController!.hideMenuViewController()
         }
     }
     override func viewDidLoad() {

@@ -28,4 +28,15 @@ import UIKit
         }
     }
     
+    // MARK: - init methods
+    override public init(frame: CGRect) {
+        super.init(frame: frame)
+        //applyStyles()
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        //applyStyles()
+    }
+    
 }

@@ -22,7 +22,7 @@ public class DesignableTextField: UITextField {
     }
     
     /// Sets the color of the border
-    @IBInspectable public var borderColor: UIColor = .clear {
+    @IBInspectable public var borderColor: UIColor = UIColor.clear {
         didSet {
             layer.borderColor = borderColor.cgColor
         }
@@ -43,14 +43,14 @@ public class DesignableTextField: UITextField {
     }
     
     /// Sets the underline color
-    @IBInspectable public var underLineColor: UIColor = .groupTableViewBackground {
+    @IBInspectable public var underLineColor: UIColor = UIColor.groupTableViewBackground {
         didSet {
             updateUnderLineUI()
         }
     }
     
     /// Sets the placeholder color
-    @IBInspectable public var placeholderColor: UIColor = .lightGray {
+    @IBInspectable public var placeholderColor: UIColor = UIColor.lightGray {
         didSet {
             let placeholderStr = placeholder ?? ""
             attributedPlaceholder = NSAttributedString(string: placeholderStr, attributes: [kCTForegroundColorAttributeName as NSAttributedStringKey: placeholderColor])
@@ -167,7 +167,7 @@ public class DesignableTextField: UITextField {
         leftViewMode = .never
         if leftMargin > 0 {
             if nil == leftView {
-                leftAcessoryView.backgroundColor = .clear
+                leftAcessoryView.backgroundColor = UIColor.clear
                 leftView = leftAcessoryView
                 leftViewMode = .always
             }
@@ -179,7 +179,7 @@ public class DesignableTextField: UITextField {
         rightViewMode = .never
         if rightMargin > 0 {
             if nil == rightView {
-                rightAcessoryView.backgroundColor = .clear
+                rightAcessoryView.backgroundColor = UIColor.clear
                 rightView = rightAcessoryView
                 rightViewMode = .always
             }
