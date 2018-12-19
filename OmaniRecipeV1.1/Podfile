@@ -10,6 +10,8 @@ target 'OmaniRecipeV1.1' do
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
 pod 'Firebase/Storage'
+pod 'AKSideMenu'
 #pod 'Kingfisher', '~> 4.0'
+
 
 end
