@@ -22,6 +22,9 @@
 		9DEEF87F21C679AE00BDA720 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEEF87E21C679AE00BDA720 /* SignUpViewController.swift */; };
 		9DEEF88321C67D7400BDA720 /* UserClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEEF88221C67D7400BDA720 /* UserClass.swift */; };
 		9DEEF88521C680AD00BDA720 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9DEEF88421C680AD00BDA720 /* GoogleService-Info.plist */; };
+		B915AC7321D0BDD000ED1035 /* AddStepTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915AC7021D0BDCF00ED1035 /* AddStepTableViewCell.swift */; };
+		B915AC7421D0BDD000ED1035 /* AddIngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915AC7121D0BDCF00ED1035 /* AddIngredientTableViewCell.swift */; };
+		B915AC7521D0BDD000ED1035 /* AddRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915AC7221D0BDD000ED1035 /* AddRecipeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,9 @@
 		9DEEF87E21C679AE00BDA720 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9DEEF88221C67D7400BDA720 /* UserClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserClass.swift; sourceTree = "<group>"; };
 		9DEEF88421C680AD00BDA720 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B915AC7021D0BDCF00ED1035 /* AddStepTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddStepTableViewCell.swift; sourceTree = "<group>"; };
+		B915AC7121D0BDCF00ED1035 /* AddIngredientTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddIngredientTableViewCell.swift; sourceTree = "<group>"; };
+		B915AC7221D0BDD000ED1035 /* AddRecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRecipeViewController.swift; sourceTree = "<group>"; };
 		C9336CEB83FAE0378CD0A569 /* Pods-OmaniRecipeV1.1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmaniRecipeV1.1.release.xcconfig"; path = "Pods/Target Support Files/Pods-OmaniRecipeV1.1/Pods-OmaniRecipeV1.1.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +90,9 @@
 				9DC686F921CA2B1F003434AC /* LeftMenuViewController.swift */,
 				9DC686F821CA2B1F003434AC /* RootViewController.swift */,
 				9DC686FC21CA2B1F003434AC /* SecondViewController.swift */,
+				B915AC7121D0BDCF00ED1035 /* AddIngredientTableViewCell.swift */,
+				B915AC7221D0BDD000ED1035 /* AddRecipeViewController.swift */,
+				B915AC7021D0BDCF00ED1035 /* AddStepTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -272,12 +281,15 @@
 				9DEEF84C21C63E7200BDA720 /* SignInViewController.swift in Sources */,
 				9DEEF84A21C63E7200BDA720 /* AppDelegate.swift in Sources */,
 				9DEEF85D21C6571B00BDA720 /* DesignableTextField.swift in Sources */,
+				B915AC7421D0BDD000ED1035 /* AddIngredientTableViewCell.swift in Sources */,
 				9DC686FD21CA2B1F003434AC /* RootViewController.swift in Sources */,
 				9DC6870021CA2B1F003434AC /* HomeViewController.swift in Sources */,
 				9DEEF85F21C667C500BDA720 /* DesignableButton.swift in Sources */,
 				9DEEF87F21C679AE00BDA720 /* SignUpViewController.swift in Sources */,
+				B915AC7521D0BDD000ED1035 /* AddRecipeViewController.swift in Sources */,
 				9DC686FE21CA2B1F003434AC /* LeftMenuViewController.swift in Sources */,
 				9DEEF88321C67D7400BDA720 /* UserClass.swift in Sources */,
+				B915AC7321D0BDD000ED1035 /* AddStepTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
