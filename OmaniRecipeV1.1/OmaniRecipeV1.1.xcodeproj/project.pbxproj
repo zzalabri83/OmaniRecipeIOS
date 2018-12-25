@@ -24,7 +24,13 @@
 		9DEEF88521C680AD00BDA720 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9DEEF88421C680AD00BDA720 /* GoogleService-Info.plist */; };
 		B915AC7321D0BDD000ED1035 /* AddStepTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915AC7021D0BDCF00ED1035 /* AddStepTableViewCell.swift */; };
 		B915AC7421D0BDD000ED1035 /* AddIngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915AC7121D0BDCF00ED1035 /* AddIngredientTableViewCell.swift */; };
-		B915AC7521D0BDD000ED1035 /* AddRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915AC7221D0BDD000ED1035 /* AddRecipeViewController.swift */; };
+		B915AC7721D0DF9200ED1035 /* RecipeProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915AC7621D0DF9200ED1035 /* RecipeProfile.swift */; };
+		B915AC7921D0E6BB00ED1035 /* RecipeClipperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915AC7821D0E6BA00ED1035 /* RecipeClipperViewController.swift */; };
+		B915AC7B21D21E2E00ED1035 /* AddRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915AC7A21D21E2E00ED1035 /* AddRecipeViewController.swift */; };
+		B915AC7D21D21EEC00ED1035 /* AddIngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915AC7C21D21EEC00ED1035 /* AddIngredientsViewController.swift */; };
+		B915AC7F21D21EFC00ED1035 /* AddStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915AC7E21D21EFC00ED1035 /* AddStepsViewController.swift */; };
+		B915AC8121D2A8E500ED1035 /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915AC8021D2A8E500ED1035 /* DesignableTextView.swift */; };
+		B915AC8321D2B1CE00ED1035 /* ShowRecipeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915AC8221D2B1CE00ED1035 /* ShowRecipeDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,7 +54,13 @@
 		9DEEF88421C680AD00BDA720 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B915AC7021D0BDCF00ED1035 /* AddStepTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddStepTableViewCell.swift; sourceTree = "<group>"; };
 		B915AC7121D0BDCF00ED1035 /* AddIngredientTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddIngredientTableViewCell.swift; sourceTree = "<group>"; };
-		B915AC7221D0BDD000ED1035 /* AddRecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRecipeViewController.swift; sourceTree = "<group>"; };
+		B915AC7621D0DF9200ED1035 /* RecipeProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeProfile.swift; sourceTree = "<group>"; };
+		B915AC7821D0E6BA00ED1035 /* RecipeClipperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeClipperViewController.swift; sourceTree = "<group>"; };
+		B915AC7A21D21E2E00ED1035 /* AddRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeViewController.swift; sourceTree = "<group>"; };
+		B915AC7C21D21EEC00ED1035 /* AddIngredientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIngredientsViewController.swift; sourceTree = "<group>"; };
+		B915AC7E21D21EFC00ED1035 /* AddStepsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStepsViewController.swift; sourceTree = "<group>"; };
+		B915AC8021D2A8E500ED1035 /* DesignableTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextView.swift; sourceTree = "<group>"; };
+		B915AC8221D2B1CE00ED1035 /* ShowRecipeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRecipeDetailsViewController.swift; sourceTree = "<group>"; };
 		C9336CEB83FAE0378CD0A569 /* Pods-OmaniRecipeV1.1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmaniRecipeV1.1.release.xcconfig"; path = "Pods/Target Support Files/Pods-OmaniRecipeV1.1/Pods-OmaniRecipeV1.1.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,9 +102,14 @@
 				9DC686F921CA2B1F003434AC /* LeftMenuViewController.swift */,
 				9DC686F821CA2B1F003434AC /* RootViewController.swift */,
 				9DC686FC21CA2B1F003434AC /* SecondViewController.swift */,
+				B915AC7821D0E6BA00ED1035 /* RecipeClipperViewController.swift */,
 				B915AC7121D0BDCF00ED1035 /* AddIngredientTableViewCell.swift */,
-				B915AC7221D0BDD000ED1035 /* AddRecipeViewController.swift */,
 				B915AC7021D0BDCF00ED1035 /* AddStepTableViewCell.swift */,
+				B915AC7621D0DF9200ED1035 /* RecipeProfile.swift */,
+				B915AC7A21D21E2E00ED1035 /* AddRecipeViewController.swift */,
+				B915AC7C21D21EEC00ED1035 /* AddIngredientsViewController.swift */,
+				B915AC7E21D21EFC00ED1035 /* AddStepsViewController.swift */,
+				B915AC8221D2B1CE00ED1035 /* ShowRecipeDetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -136,6 +153,7 @@
 			children = (
 				9DEEF85C21C6571B00BDA720 /* DesignableTextField.swift */,
 				9DEEF85E21C667C500BDA720 /* DesignableButton.swift */,
+				B915AC8021D2A8E500ED1035 /* DesignableTextView.swift */,
 			);
 			path = UIDesignables;
 			sourceTree = "<group>";
@@ -282,13 +300,19 @@
 				9DEEF84A21C63E7200BDA720 /* AppDelegate.swift in Sources */,
 				9DEEF85D21C6571B00BDA720 /* DesignableTextField.swift in Sources */,
 				B915AC7421D0BDD000ED1035 /* AddIngredientTableViewCell.swift in Sources */,
+				B915AC7721D0DF9200ED1035 /* RecipeProfile.swift in Sources */,
 				9DC686FD21CA2B1F003434AC /* RootViewController.swift in Sources */,
+				B915AC8121D2A8E500ED1035 /* DesignableTextView.swift in Sources */,
+				B915AC7D21D21EEC00ED1035 /* AddIngredientsViewController.swift in Sources */,
+				B915AC7F21D21EFC00ED1035 /* AddStepsViewController.swift in Sources */,
+				B915AC7921D0E6BB00ED1035 /* RecipeClipperViewController.swift in Sources */,
+				B915AC7B21D21E2E00ED1035 /* AddRecipeViewController.swift in Sources */,
 				9DC6870021CA2B1F003434AC /* HomeViewController.swift in Sources */,
 				9DEEF85F21C667C500BDA720 /* DesignableButton.swift in Sources */,
 				9DEEF87F21C679AE00BDA720 /* SignUpViewController.swift in Sources */,
-				B915AC7521D0BDD000ED1035 /* AddRecipeViewController.swift in Sources */,
 				9DC686FE21CA2B1F003434AC /* LeftMenuViewController.swift in Sources */,
 				9DEEF88321C67D7400BDA720 /* UserClass.swift in Sources */,
+				B915AC8321D2B1CE00ED1035 /* ShowRecipeDetailsViewController.swift in Sources */,
 				B915AC7321D0BDD000ED1035 /* AddStepTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

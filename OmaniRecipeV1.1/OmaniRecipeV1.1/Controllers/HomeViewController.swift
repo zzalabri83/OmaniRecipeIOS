@@ -15,6 +15,13 @@ public class HomeViewController: UIViewController {
         self.performSegue(withIdentifier: "segueRecipeDetails", sender: nil)
         
     }
+    @IBAction func btnAddRecipe(_ sender: Any) {
+        self.performSegue(withIdentifier: "addRecipe", sender: nil)
+    }
+    @IBAction func btnRecipeClipper(_ sender: Any) {
+        self.performSegue(withIdentifier: "recipeClipper", sender: nil)
+    }
+    
     override public func viewDidLoad() {
         super.viewDidLoad()
     }

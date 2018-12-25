@@ -10,14 +10,15 @@ import UIKit
 
 class AddIngredientTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var txtCell1: UITextField!
+    @IBOutlet weak var txtCell1: DesignableTextView!
+    
     
     public func configure(text: String?, placeholder: String) {
         txtCell1.text = text
-        txtCell1.placeholder = placeholder
+        //txtCell1.placeholder = placeholder
         
         txtCell1.accessibilityValue = text
-        txtCell1.accessibilityLabel = placeholder
+        //txtCell1.accessibilityLabel = placeholder
     }
     
     override func awakeFromNib() {
