@@ -97,8 +97,9 @@ class AddIngredientsViewController: UIViewController, UITableViewDelegate, UITab
         ingredientsArray.removeAll()
         self.recipeProfile = recipeProfile
         for item in recipeProfile.ingredients {
-            print(item.nameE)
-            ingredientsArray.append(item.nameE)
+            if let nameE = item.nameE {
+                ingredientsArray.append(nameE)
+            }
         }
         
         tableCount = ingredientsArray.count

@@ -105,10 +105,7 @@ class RecipeClipperViewController: UIViewController, UIWebViewDelegate {
                     }else {
                         let newContentArray = item.components(separatedBy: stringSeparator)
                         if newContentArray.count > 1 {
-                            let message = newContentArray[0]
-                            print(message)
-                            let ingredient = Ingredient()
-                            ingredient.nameE = newContentArray[0]
+                            let ingredient = Ingredient(dict: ["nameE": newContentArray[0], "amount": ""])
                             recipeProfile.ingredients.append(ingredient)
                             ingredientsDone = true
                             checkToEnableButtonDone()
@@ -130,10 +127,7 @@ class RecipeClipperViewController: UIViewController, UIWebViewDelegate {
                     }else {
                         let newContentArray = item.components(separatedBy: stringSeparator)
                         if newContentArray.count > 1 {
-                            let message = newContentArray[0]
-                            print(message)
-                            let step = Step()
-                            step.nameE = newContentArray[0]
+                            let step = Step(dict: ["nameE": newContentArray[0], "imageURL": ""])
                             recipeProfile.steps.append(step)
                             stepsDone = true
                             checkToEnableButtonDone()

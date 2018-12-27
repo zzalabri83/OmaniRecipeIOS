@@ -92,8 +92,9 @@ class AddStepsViewController: UIViewController, UITableViewDelegate, UITableView
         stepsArray.removeAll()
         self.recipeProfile = recipeProfile
         for item in recipeProfile.steps {
-            print(item.nameE)
-            stepsArray.append(item.nameE)
+            if let nameE = item.nameE {
+                stepsArray.append(nameE)
+            }
         }
         
         tableCount = stepsArray.count

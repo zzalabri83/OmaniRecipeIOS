@@ -384,11 +384,19 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uil-iW-hWr">
-                                <rect key="frame" x="168" y="472" width="78" height="30"/>
+                                <rect key="frame" x="157" y="472" width="100" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add Recipe"/>
+                                <state key="normal" title="Recipe Clipper"/>
                                 <connections>
                                     <action selector="btnRecipeClipper:" destination="hSz-Z5-9AU" eventType="touchUpInside" id="qpm-Xx-nwg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JuK-zq-7o5">
+                                <rect key="frame" x="163" y="556" width="89" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show Recipe"/>
+                                <connections>
+                                    <action selector="btnShowRecipe:" destination="hSz-Z5-9AU" eventType="touchUpInside" id="vCG-4m-PZO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -408,9 +416,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="0N2-zh-cr1" kind="show" identifier="segueRecipeDetails" id="P8A-mA-uTQ"/>
+                        <segue destination="0N2-zh-cr1" kind="show" identifier="recipeDetails" id="P8A-mA-uTQ"/>
                         <segue destination="I1W-rA-JpX" kind="show" identifier="recipeClipper" id="5pq-gd-bKj"/>
                         <segue destination="AOn-dr-tve" kind="show" identifier="addRecipe" id="Tps-eW-ZoE"/>
+                        <segue destination="gIk-ZK-2k0" kind="show" identifier="recipeDetails2" id="vpM-f2-czZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dYu-bm-JSI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -424,12 +433,32 @@
                     <view key="view" contentMode="scaleToFill" id="hqo-kv-zJb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zBm-nO-mWB">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <sections/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zBm-nO-mWB" firstAttribute="leading" secondItem="ooh-Hd-8qv" secondAttribute="leading" id="BUO-Xv-9iy"/>
+                            <constraint firstItem="zBm-nO-mWB" firstAttribute="trailing" secondItem="ooh-Hd-8qv" secondAttribute="trailing" id="OfN-ll-W9J"/>
+                            <constraint firstAttribute="bottom" secondItem="zBm-nO-mWB" secondAttribute="bottom" id="WK4-lb-Dir"/>
+                            <constraint firstItem="zBm-nO-mWB" firstAttribute="top" secondItem="ooh-Hd-8qv" secondAttribute="top" id="ssw-uP-une"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ooh-Hd-8qv"/>
                     </view>
                     <navigationItem key="navigationItem" id="FlC-n6-T05">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="N4L-Kp-0fL"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="N4L-Kp-0fL">
+                            <connections>
+                                <action selector="btnDone:" destination="0N2-zh-cr1" id="lA0-Ki-3IG"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="zBm-nO-mWB" id="Wj0-b9-fNN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rkf-vF-Gsh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -870,6 +899,27 @@
             </objects>
             <point key="canvasLocation" x="6380" y="1049"/>
         </scene>
+        <!--Unsplash-->
+        <scene sceneID="D5L-km-zRK">
+            <objects>
+                <viewController id="gIk-ZK-2k0" customClass="ParchmentHomePageViewController" customModule="OmaniRecipeV1_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s6B-Ep-Y3g"/>
+                        <viewControllerLayoutGuide type="bottom" id="lns-q7-Dx8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ubi-54-HS6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Z4I-ca-bgs"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="Unsplash" id="sBK-96-6oJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qXe-zd-EkL" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5548" y="-292"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Stars" width="320" height="568"/>
@@ -879,6 +929,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Tps-eW-ZoE"/>
-        <segue reference="Dp1-5b-Mxs"/>
+        <segue reference="P8A-mA-uTQ"/>
     </inferredMetricsTieBreakers>
 </document>

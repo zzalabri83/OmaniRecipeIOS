@@ -31,6 +31,23 @@
 		B915AC7F21D21EFC00ED1035 /* AddStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915AC7E21D21EFC00ED1035 /* AddStepsViewController.swift */; };
 		B915AC8121D2A8E500ED1035 /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915AC8021D2A8E500ED1035 /* DesignableTextView.swift */; };
 		B915AC8321D2B1CE00ED1035 /* ShowRecipeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915AC8221D2B1CE00ED1035 /* ShowRecipeDetailsViewController.swift */; };
+		B915AC8F21D37FFC00ED1035 /* IngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915AC8521D37FFB00ED1035 /* IngredientCell.swift */; };
+		B915AC9021D37FFC00ED1035 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915AC8621D37FFB00ED1035 /* ProfileViewModel.swift */; };
+		B915AC9121D37FFC00ED1035 /* AboutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B915AC8721D37FFB00ED1035 /* AboutCell.xib */; };
+		B915AC9221D37FFC00ED1035 /* NamePictureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B915AC8821D37FFB00ED1035 /* NamePictureCell.xib */; };
+		B915AC9321D37FFC00ED1035 /* StepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B915AC8921D37FFB00ED1035 /* StepCell.xib */; };
+		B915AC9421D37FFC00ED1035 /* NamePictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915AC8A21D37FFB00ED1035 /* NamePictureCell.swift */; };
+		B915AC9521D37FFC00ED1035 /* IngredientCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B915AC8B21D37FFC00ED1035 /* IngredientCell.xib */; };
+		B915AC9621D37FFC00ED1035 /* AboutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915AC8C21D37FFC00ED1035 /* AboutCell.swift */; };
+		B915AC9721D37FFC00ED1035 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915AC8D21D37FFC00ED1035 /* ProfileModel.swift */; };
+		B915AC9821D37FFC00ED1035 /* StepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915AC8E21D37FFC00ED1035 /* StepCell.swift */; };
+		B915AC9A21D4A95900ED1035 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915AC9921D4A95900ED1035 /* DesignableLabel.swift */; };
+		B915ACA721D4CA2400ED1035 /* ParchmentHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915ACA021D4CA2400ED1035 /* ParchmentHomePageViewController.swift */; };
+		B915ACA821D4CA2400ED1035 /* UIView+constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915ACA121D4CA2400ED1035 /* UIView+constraints.swift */; };
+		B915ACA921D4CA2400ED1035 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915ACA221D4CA2400ED1035 /* ImageCollectionViewCell.swift */; };
+		B915ACAA21D4CA2400ED1035 /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915ACA321D4CA2400ED1035 /* ImagesViewController.swift */; };
+		B915ACAB21D4CA2400ED1035 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B915ACA421D4CA2400ED1035 /* ImageCollectionViewCell.xib */; };
+		B915ACAD21D4CA2400ED1035 /* ImagePagingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B915ACA621D4CA2400ED1035 /* ImagePagingCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +78,23 @@
 		B915AC7E21D21EFC00ED1035 /* AddStepsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStepsViewController.swift; sourceTree = "<group>"; };
 		B915AC8021D2A8E500ED1035 /* DesignableTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextView.swift; sourceTree = "<group>"; };
 		B915AC8221D2B1CE00ED1035 /* ShowRecipeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRecipeDetailsViewController.swift; sourceTree = "<group>"; };
+		B915AC8521D37FFB00ED1035 /* IngredientCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientCell.swift; sourceTree = "<group>"; };
+		B915AC8621D37FFB00ED1035 /* ProfileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		B915AC8721D37FFB00ED1035 /* AboutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutCell.xib; sourceTree = "<group>"; };
+		B915AC8821D37FFB00ED1035 /* NamePictureCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NamePictureCell.xib; sourceTree = "<group>"; };
+		B915AC8921D37FFB00ED1035 /* StepCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StepCell.xib; sourceTree = "<group>"; };
+		B915AC8A21D37FFB00ED1035 /* NamePictureCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamePictureCell.swift; sourceTree = "<group>"; };
+		B915AC8B21D37FFC00ED1035 /* IngredientCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IngredientCell.xib; sourceTree = "<group>"; };
+		B915AC8C21D37FFC00ED1035 /* AboutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutCell.swift; sourceTree = "<group>"; };
+		B915AC8D21D37FFC00ED1035 /* ProfileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		B915AC8E21D37FFC00ED1035 /* StepCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepCell.swift; sourceTree = "<group>"; };
+		B915AC9921D4A95900ED1035 /* DesignableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableLabel.swift; sourceTree = "<group>"; };
+		B915ACA021D4CA2400ED1035 /* ParchmentHomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParchmentHomePageViewController.swift; sourceTree = "<group>"; };
+		B915ACA121D4CA2400ED1035 /* UIView+constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+constraints.swift"; sourceTree = "<group>"; };
+		B915ACA221D4CA2400ED1035 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		B915ACA321D4CA2400ED1035 /* ImagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
+		B915ACA421D4CA2400ED1035 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		B915ACA621D4CA2400ED1035 /* ImagePagingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePagingCell.swift; sourceTree = "<group>"; };
 		C9336CEB83FAE0378CD0A569 /* Pods-OmaniRecipeV1.1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmaniRecipeV1.1.release.xcconfig"; path = "Pods/Target Support Files/Pods-OmaniRecipeV1.1/Pods-OmaniRecipeV1.1.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +169,8 @@
 		9DEEF84821C63E7200BDA720 /* OmaniRecipeV1.1 */ = {
 			isa = PBXGroup;
 			children = (
+				B915AC9F21D4C88F00ED1035 /* Parchment HomePage */,
+				B915AC8421D37FA500ED1035 /* Show Recipe Details Cells */,
 				9DEEF85B21C6571B00BDA720 /* UIDesignables */,
 				9DC686F721CA2768003434AC /* Controllers */,
 				9DEEF84921C63E7200BDA720 /* AppDelegate.swift */,
@@ -154,8 +190,39 @@
 				9DEEF85C21C6571B00BDA720 /* DesignableTextField.swift */,
 				9DEEF85E21C667C500BDA720 /* DesignableButton.swift */,
 				B915AC8021D2A8E500ED1035 /* DesignableTextView.swift */,
+				B915AC9921D4A95900ED1035 /* DesignableLabel.swift */,
 			);
 			path = UIDesignables;
+			sourceTree = "<group>";
+		};
+		B915AC8421D37FA500ED1035 /* Show Recipe Details Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B915AC8C21D37FFC00ED1035 /* AboutCell.swift */,
+				B915AC8721D37FFB00ED1035 /* AboutCell.xib */,
+				B915AC8521D37FFB00ED1035 /* IngredientCell.swift */,
+				B915AC8B21D37FFC00ED1035 /* IngredientCell.xib */,
+				B915AC8A21D37FFB00ED1035 /* NamePictureCell.swift */,
+				B915AC8821D37FFB00ED1035 /* NamePictureCell.xib */,
+				B915AC8D21D37FFC00ED1035 /* ProfileModel.swift */,
+				B915AC8621D37FFB00ED1035 /* ProfileViewModel.swift */,
+				B915AC8E21D37FFC00ED1035 /* StepCell.swift */,
+				B915AC8921D37FFB00ED1035 /* StepCell.xib */,
+			);
+			path = "Show Recipe Details Cells";
+			sourceTree = "<group>";
+		};
+		B915AC9F21D4C88F00ED1035 /* Parchment HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				B915ACA221D4CA2400ED1035 /* ImageCollectionViewCell.swift */,
+				B915ACA421D4CA2400ED1035 /* ImageCollectionViewCell.xib */,
+				B915ACA621D4CA2400ED1035 /* ImagePagingCell.swift */,
+				B915ACA321D4CA2400ED1035 /* ImagesViewController.swift */,
+				B915ACA121D4CA2400ED1035 /* UIView+constraints.swift */,
+				B915ACA021D4CA2400ED1035 /* ParchmentHomePageViewController.swift */,
+			);
+			path = "Parchment HomePage";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,7 +237,6 @@
 				9DEEF84321C63E7200BDA720 /* Frameworks */,
 				9DEEF84421C63E7200BDA720 /* Resources */,
 				5CC25AFFBFA7F79E0BE9AC96 /* [CP] Embed Pods Frameworks */,
-				5B58E6996B52FB34ED6C2CFA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -221,7 +287,12 @@
 			files = (
 				9DEEF85421C63E7600BDA720 /* LaunchScreen.storyboard in Resources */,
 				9DEEF88521C680AD00BDA720 /* GoogleService-Info.plist in Resources */,
+				B915AC9121D37FFC00ED1035 /* AboutCell.xib in Resources */,
+				B915AC9321D37FFC00ED1035 /* StepCell.xib in Resources */,
+				B915AC9521D37FFC00ED1035 /* IngredientCell.xib in Resources */,
+				B915AC9221D37FFC00ED1035 /* NamePictureCell.xib in Resources */,
 				9DEEF85121C63E7600BDA720 /* Assets.xcassets in Resources */,
+				B915ACAB21D4CA2400ED1035 /* ImageCollectionViewCell.xib in Resources */,
 				9DEEF84F21C63E7200BDA720 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,21 +318,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5B58E6996B52FB34ED6C2CFA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OmaniRecipeV1.1/Pods-OmaniRecipeV1.1-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5CC25AFFBFA7F79E0BE9AC96 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -272,6 +328,7 @@
 				"${BUILT_PRODUCTS_DIR}/AKSideMenu/AKSideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Parchment/Parchment.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -280,6 +337,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AKSideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parchment.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -295,22 +353,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B915ACAA21D4CA2400ED1035 /* ImagesViewController.swift in Sources */,
 				9DC6870121CA2B1F003434AC /* SecondViewController.swift in Sources */,
 				9DEEF84C21C63E7200BDA720 /* SignInViewController.swift in Sources */,
 				9DEEF84A21C63E7200BDA720 /* AppDelegate.swift in Sources */,
 				9DEEF85D21C6571B00BDA720 /* DesignableTextField.swift in Sources */,
+				B915AC9A21D4A95900ED1035 /* DesignableLabel.swift in Sources */,
 				B915AC7421D0BDD000ED1035 /* AddIngredientTableViewCell.swift in Sources */,
 				B915AC7721D0DF9200ED1035 /* RecipeProfile.swift in Sources */,
+				B915ACA821D4CA2400ED1035 /* UIView+constraints.swift in Sources */,
+				B915ACAD21D4CA2400ED1035 /* ImagePagingCell.swift in Sources */,
+				B915AC9021D37FFC00ED1035 /* ProfileViewModel.swift in Sources */,
 				9DC686FD21CA2B1F003434AC /* RootViewController.swift in Sources */,
 				B915AC8121D2A8E500ED1035 /* DesignableTextView.swift in Sources */,
+				B915AC9421D37FFC00ED1035 /* NamePictureCell.swift in Sources */,
 				B915AC7D21D21EEC00ED1035 /* AddIngredientsViewController.swift in Sources */,
 				B915AC7F21D21EFC00ED1035 /* AddStepsViewController.swift in Sources */,
+				B915ACA921D4CA2400ED1035 /* ImageCollectionViewCell.swift in Sources */,
 				B915AC7921D0E6BB00ED1035 /* RecipeClipperViewController.swift in Sources */,
 				B915AC7B21D21E2E00ED1035 /* AddRecipeViewController.swift in Sources */,
+				B915AC9821D37FFC00ED1035 /* StepCell.swift in Sources */,
+				B915AC9621D37FFC00ED1035 /* AboutCell.swift in Sources */,
+				B915AC9721D37FFC00ED1035 /* ProfileModel.swift in Sources */,
 				9DC6870021CA2B1F003434AC /* HomeViewController.swift in Sources */,
 				9DEEF85F21C667C500BDA720 /* DesignableButton.swift in Sources */,
 				9DEEF87F21C679AE00BDA720 /* SignUpViewController.swift in Sources */,
+				B915ACA721D4CA2400ED1035 /* ParchmentHomePageViewController.swift in Sources */,
 				9DC686FE21CA2B1F003434AC /* LeftMenuViewController.swift in Sources */,
+				B915AC8F21D37FFC00ED1035 /* IngredientCell.swift in Sources */,
 				9DEEF88321C67D7400BDA720 /* UserClass.swift in Sources */,
 				B915AC8321D2B1CE00ED1035 /* ShowRecipeDetailsViewController.swift in Sources */,
 				B915AC7321D0BDD000ED1035 /* AddStepTableViewCell.swift in Sources */,

@@ -11,27 +11,36 @@ import UIKit
 class ShowRecipeDetailsViewController: UIViewController {
 
     var recipeProfile = RecipeProfile()
+    var recipeID: String?
+    
+    fileprivate var viewModel = ProfileViewModel()
+    //var viewModel = ProfileViewModel.self
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    @IBAction func btnDone(_ sender: Any) {
+        tableView?.reloadData()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        print(recipeProfile.recipeTitle)
+        
+        //if let recipe = self.recipeProfile {
+            let viewM = ProfileViewModel(recipeProfile: recipeProfile)
+        viewModel = viewM
+        
+            tableView.dataSource = viewModel
+            
+            tableView.estimatedRowHeight = 100
+            tableView.rowHeight = UITableViewAutomaticDimension
+            
+            tableView.register(AboutCell.nib, forCellReuseIdentifier: AboutCell.identifier)
+            tableView?.register(NamePictureCell.nib, forCellReuseIdentifier: NamePictureCell.identifier)
+            tableView?.register(IngredientCell.nib, forCellReuseIdentifier: IngredientCell.identifier)
+            tableView?.register(StepCell.nib, forCellReuseIdentifier: StepCell.identifier)
+        //}
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

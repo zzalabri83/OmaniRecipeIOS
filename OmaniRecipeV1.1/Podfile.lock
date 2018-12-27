@@ -21,7 +21,7 @@ PODS:
     - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
     - GoogleUtilities/MethodSwizzler (~> 5.2)
     - GoogleUtilities/Network (~> 5.2)
-    - GoogleUtilities/NSData+zlib (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
     - nanopb (~> 0.3)
   - FirebaseAuth (5.1.0):
     - FirebaseAuthInterop (~> 1.0)
@@ -47,7 +47,7 @@ PODS:
     - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
     - GoogleUtilities/MethodSwizzler (~> 5.2)
     - GoogleUtilities/Network (~> 5.2)
-    - GoogleUtilities/NSData+zlib (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
     - nanopb (~> 0.3)
   - GoogleUtilities/AppDelegateSwizzler (5.3.6):
     - GoogleUtilities/Environment
@@ -60,9 +60,9 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/Network (5.3.6):
     - GoogleUtilities/Logger
-    - GoogleUtilities/NSData+zlib
+    - "GoogleUtilities/NSData+zlib"
     - GoogleUtilities/Reachability
-  - GoogleUtilities/NSData+zlib (5.3.6)
+  - "GoogleUtilities/NSData+zlib (5.3.6)"
   - GoogleUtilities/Reachability (5.3.6):
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (5.3.6):
@@ -74,6 +74,7 @@ PODS:
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
+  - Parchment (1.5.0)
 
 DEPENDENCIES:
   - AKSideMenu
@@ -81,6 +82,25 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
+  - Parchment
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AKSideMenu
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseAuth
+    - FirebaseAuthInterop
+    - FirebaseCore
+    - FirebaseDatabase
+    - FirebaseInstanceID
+    - FirebaseStorage
+    - GoogleAppMeasurement
+    - GoogleUtilities
+    - GTMSessionFetcher
+    - leveldb-library
+    - nanopb
+    - Parchment
 
 SPEC CHECKSUMS:
   AKSideMenu: aac7d1e523595388dcf480990a1162d8dd865e1a
@@ -97,7 +117,8 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  Parchment: 5a8c9c73549a6d73a7c1b606c27246910d2e5720
 
-PODFILE CHECKSUM: 3dbe92124c0ea13bdd8fd19ecc4a534e37e18681
+PODFILE CHECKSUM: 09aad7dbc9f1a505d43bc495cfbb7ffd6131d41a
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3

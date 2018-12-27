@@ -11,6 +11,7 @@ pod 'Firebase/Auth'
 pod 'Firebase/Database'
 pod 'Firebase/Storage'
 pod 'AKSideMenu'
+pod 'Parchment'
 #pod 'Kingfisher', '~> 4.0'
 
 

@@ -16,46 +16,26 @@ class RecipeProfile: NSObject {
     var ingredients = [Ingredient]()
     var steps = [Step]()
     
-    func saveRecipeToFirebase(recipeProfile: RecipeProfile) {
+    func saveRecipeToFirebase(recipeProfile: RecipeProfile) -> String {
+        //var recipeID: String?
         var ref = DatabaseReference()
         ref = Database.database().reference()
         
-        let ingredient = Ingredient()
-        let arrIngredients = ingredient.ingredientsDictionary(ingredints: recipeProfile.ingredients)
-        let steps = Step()
-        let arrSteps = steps.stepsDictionary(steps: recipeProfile.steps)
         
+        let arrIngredients = ingredients[0].ingredientsDictionary(ingredints: recipeProfile.ingredients)
+        let arrSteps = steps[0].stepsDictionary(steps: recipeProfile.steps)
+
         let recipeDictionary = ["recipeTitle": recipeProfile.recipeTitle,
                                 "recipeDescription": recipeProfile.recipeDescription,
                                 "imageURL": recipeProfile.imageURL,
                                 "ingredients": arrIngredients,
                                 "steps": arrSteps] as [String : Any]
-        
-        ref.child("Recipes").childByAutoId().setValue(recipeDictionary)
-    }
-}
-class Ingredient: NSObject {
-    var nameE = ""
-    
-    func ingredientsDictionary(ingredints: [Ingredient]) -> Array<Any>{
-        var arr = [[String:String]]()
-        for item in ingredints {
-            let dict = ["nameE": item.nameE]
-            arr.append(dict)
+
+        //recipeID =
+        if let recipeID = ref.child("recipes").childByAutoId().key {
+            ref.child("recipes").child(recipeID).setValue(recipeDictionary)
+            return recipeID
         }
-        return arr
-    }
-}
-class Step: NSObject {
-    var nameE = ""
-    var imageURL = ""
-    
-    func stepsDictionary(steps: [Step]) -> Array<Any>{
-        var arr = [[String:String]]()
-        for item in steps {
-            let dict = ["nameE": item.nameE, "imageURL": item.imageURL]
-            arr.append(dict)
-        }
-        return arr
+        return ""
     }
 }

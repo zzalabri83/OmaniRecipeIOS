@@ -14,6 +14,7 @@ import FirebaseStorage
 class AddRecipeViewController: UIViewController {
     var ref = DatabaseReference()
     var recipeProfile = RecipeProfile()
+    var recipeID: String?
     
     var ingredientsArray = [String]()
     var stepsArray = [String]()
@@ -71,7 +72,7 @@ class AddRecipeViewController: UIViewController {
 //        }
         recipeProfile.imageURL = "Here is an image"
         
-        recipeProfile.saveRecipeToFirebase(recipeProfile: recipeProfile)
+        recipeID = recipeProfile.saveRecipeToFirebase(recipeProfile: recipeProfile)
         
         //showAlertMessage(title: "Recipe Clipper", message: "aaa")
         self.performSegue(withIdentifier: "showAddedRecipe", sender: nil)
@@ -126,6 +127,9 @@ class AddRecipeViewController: UIViewController {
         if let ShowController = destination as? ShowRecipeDetailsViewController {
             //locationTableViewController = locationController
             ShowController.recipeProfile = self.recipeProfile
+            ShowController.recipeID = self.recipeID
+            
+            print(recipeID ?? "No RecipeID in Add")
         }
     }
     
